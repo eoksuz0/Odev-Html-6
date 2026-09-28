@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Formu</title>
+</head>
+<body>
+
+   <form action="kayıt" method="post">
+
+    <fieldset>
+        <legend> Kişisel Bilgiler</legend>
+        <label for="name">Ad-Soyad</label>
+        <input type="name" name="name id="name required>
+
+         <br><br>
+
+        <label for="gender">Cinsiyet</label>
+        <input type="radio" name="gender" id="Cinsiyet" required> Erkek
+        <input type="radio" name="gender" id="Cinsiyet" required> Kız
+        <input type="radio" name="gender" id="Cinsiyet" required> Belirtmek İstemiyor
+
+        <br><br>
+
+        <label for="Dogum Tarihi"> Doğum Tarihi</label>
+        <input type="date" name="Doğum Tarihi" id=""required>
+
+        <br><br>
+
+        <label for="Vesikalık">Fotoğraf Yükle</label>
+        <input type="file" name="Vesikalık" id=""required accept=".jpeg , .jpg , .png ">
+        
+    </fieldset> <br>
+
+    <fieldset>
+        <legend>İletişim Bilgileri</legend>
+        
+        <label for="telefon">Telefon Numarası</label>
+        <input type="tel" name="telefon" id=""required placeholder="0(549) 610 07 61">
+
+        <br><br>
+
+        <label for="email">E-Posta</label>
+        <input type="email" name="email" id=""required>
+
+        <br><br>
+
+    </fieldset>
+    
+    <br>
+
+    <fieldset>
+        <legend>Adres Bilgileri</legend>
+
+        <label for="İl">İl</label>
+        <select name="il" id="il" required>
+        <option value="">Seçiniz</option>
+        <option value="01">Adana</option>
+        <option value="02">Adıyaman</option>
+        <option value="03">Afyonkarahisar</option>
+        <option value="04">Ağrı</option>
+        <option value="05">Amasya</option>
+        <option value="06">Ankara</option>
+        <option value="07">Antalya</option>
+        <option value="08">Artvin</option>
+        <option value="09">Aydın</option>
+        <option value="10">Balıkesir</option>
+        <option value="11">Bilecik</option>
+        <option value="12">Bingöl</option>
+        <option value="13">Bitlis</option>
+        <option value="14">Bolu</option>
+        <option value="15">Burdur</option>
+        <option value="16">Bursa</option>
+        <option value="17">Çanakkale</option>
+        <option value="18">Çankırı</option>
+        <option value="19">Çorum</option>
+        <option value="20">Denizli</option>
+        <option value="21">Diyarbakır</option>
+        <option value="22">Edirne</option>
+        <option value="23">Elazığ</option>
+        <option value="24">Erzincan</option>
+        <option value="25">Erzurum</option>
+        <option value="26">Eskişehir</option>
+        <option value="27">Gaziantep</option>
+        <option value="28">Giresun</option>
+        <option value="29">Gümüşhane</option>
+        <option value="30">Hakkari</option>
+        <option value="31">Hatay</option>
+        <option value="32">Isparta</option>
+        <option value="33">Mersin</option>
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="36">Kars</option>
+        <option value="37">Kastamonu</option>
+        <option value="38">Kayseri</option>
+        <option value="39">Kırklareli</option>
+        <option value="40">Kırşehir</option>
+        <option value="41">Kocaeli</option>
+        <option value="42">Konya</option>
+        <option value="43">Kütahya</option>
+        <option value="44">Malatya</option>
+        <option value="45">Manisa</option>
+        <option value="46">Kahramanmaraş</option>
+        <option value="47">Mardin</option>
+        <option value="48">Muğla</option>
+        <option value="49">Muş</option>
+        <option value="50">Nevşehir</option>
+        <option value="51">Niğde</option>
+        <option value="52">Ordu</option>
+        <option value="53">Rize</option>
+        <option value="54">Sakarya</option>
+        <option value="55">Samsun</option>
+        <option value="56">Siirt</option>
+        <option value="57">Sinop</option>
+        <option value="58">Sivas</option>
+        <option value="59">Tekirdağ</option>
+        <option value="60">Tokat</option>
+        <option value="61" selected>Trabzon</option>
+        <option value="62">Tunceli</option>
+        <option value="63">Şanlıurfa</option>
+        <option value="64">Uşak</option>
+        <option value="65">Van</option>
+        <option value="66">Yozgat</option>
+        <option value="67">Zonguldak</option>
+        <option value="68">Aksaray</option>
+        <option value="69">Bayburt</option>
+        <option value="70">Karaman</option>
+        <option value="71">Kırıkkale</option>
+        <option value="72">Batman</option>
+        <option value="73">Şırnak</option>
+        <option value="74">Bartın</option>
+        <option value="75">Ardahan</option>
+        <option value="76">Iğdır</option>
+        <option value="77">Yalova</option>
+        <option value="78">Karabük</option>
+        <option value="79">Kilis</option>
+        <option value="80">Osmaniye</option>
+        <option value="81">Düzce</option>
+        </select>
+
+        <br><br>
+        <label for="ilce">İlçe</label>
+        <input type="text" required placeholder="Sürmene">
+
+        <br><br>
+
+        <label for="Acik Adres">Açık Adres</label><br>
+        <textarea name="Acik Adres" rows="6" maxlength="30" id="acıkadres" required></textarea>
+
+    </fieldset>
+    
+    <br>
+
+    <fieldset>
+        <legend>Fiziksel ve Sağlık Bilgileri</legend>
+
+        <label for="boy">Boy</label>
+        <input type="number" name="" id="" min="0">
+
+        <br><br>
+        <label for="kilo">Kilo</label>
+        <input type="number" name="" id="" min="0">
+        <br><br>
+        
+        <label for="kan">Kan Grubu</label>
+        <select name="kan" id="">
+                <optgroup label="Arh" >
+                    <option value="">ARh+</option>
+                    <option value="">ARh-</option>
+                </optgroup>
+
+                <optgroup label="Brh">
+                    <option value="">BRh+</option>
+                    <option value="">BRh-</option>
+                </optgroup>
+
+                <optgroup label="ABrh">
+                    <option value="">ABRh+</option>
+                    <option value="">ABRh-</option>
+                </optgroup>
+
+                <optgroup label="0Rh">
+                    <option value="">0Rh+</option>
+                    <option value="">0BRh-</option>
+                </optgroup>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Resmi ve Yasal Evraklar</legend>
+
+        <label for="Askerlik">Askerlik Durumu</label>
+        <select name="Askerlik" id="">
+            <option value="yapıldı">Seçiniz</option>
+            <option value="yapıldı">Yapıldı</option>
+            <option value="yapilmadi">Yapılmadı</option>
+            <option value="tecilli">Tecilli</option>
+            
+        </select>
+
+            <br><br>
+            <label for="ehliyet bilgisi">Ehliyet Bilgisi</label><br>
+            <select name="ehliyet bilgisi" id="" multiple size="6">
+            <option value="" selected>Seçiniz</option>
+            <option value="M">M</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A">A</option>
+            <option value="B1">B1</option>
+            <option value="B">B</option>
+            <option value="BE">BE</option>
+            <option value="C1">C1</option>
+            <option value="C1E">C1E</option>
+            <option value="C">C</option>
+            <option value="CE">CE</option>
+            <option value="D1">D1</option>
+            <option value="D1E">D1E</option>
+            <option value="D">D</option>
+            <option value="DE">DE</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="Gazi">Gazi / Şehit Yakınımısınız ?</label>
+        <input type="radio" name="Gazi" id="Cinsiyet" required> Evet
+        <input type="radio" name="Gazi" id="Cinsiyet" required> Hayır
+        
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+
+        <legend>Sınav Bilgileri</legend>
+        <label for="Sınav">İl</label>
+        <select name="sınav" id="il" required>
+        <option value="">Seçiniz</option>
+        <option value="01">Adana</option>
+        <option value="02">Adıyaman</option>
+        <option value="03">Afyonkarahisar</option>
+        <option value="04">Ağrı</option>
+        <option value="05">Amasya</option>
+        <option value="06">Ankara</option>
+        <option value="07">Antalya</option>
+        <option value="08">Artvin</option>
+        <option value="09">Aydın</option>
+        <option value="10">Balıkesir</option>
+        <option value="11">Bilecik</option>
+        <option value="12">Bingöl</option>
+        <option value="13">Bitlis</option>
+        <option value="14">Bolu</option>
+        <option value="15">Burdur</option>
+        <option value="16">Bursa</option>
+        <option value="17">Çanakkale</option>
+        <option value="18">Çankırı</option>
+        <option value="19">Çorum</option>
+        <option value="20">Denizli</option>
+        <option value="21">Diyarbakır</option>
+        <option value="22">Edirne</option>
+        <option value="23">Elazığ</option>
+        <option value="24">Erzincan</option>
+        <option value="25">Erzurum</option>
+        <option value="26">Eskişehir</option>
+        <option value="27">Gaziantep</option>
+        <option value="28">Giresun</option>
+        <option value="29">Gümüşhane</option>
+        <option value="30">Hakkari</option>
+        <option value="31">Hatay</option>
+        <option value="32">Isparta</option>
+        <option value="33">Mersin</option>
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="36">Kars</option>
+        <option value="37">Kastamonu</option>
+        <option value="38">Kayseri</option>
+        <option value="39">Kırklareli</option>
+        <option value="40">Kırşehir</option>
+        <option value="41">Kocaeli</option>
+        <option value="42">Konya</option>
+        <option value="43">Kütahya</option>
+        <option value="44">Malatya</option>
+        <option value="45">Manisa</option>
+        <option value="46">Kahramanmaraş</option>
+        <option value="47">Mardin</option>
+        <option value="48">Muğla</option>
+        <option value="49">Muş</option>
+        <option value="50">Nevşehir</option>
+        <option value="51">Niğde</option>
+        <option value="52">Ordu</option>
+        <option value="53">Rize</option>
+        <option value="54">Sakarya</option>
+        <option value="55">Samsun</option>
+        <option value="56">Siirt</option>
+        <option value="57">Sinop</option>
+        <option value="58">Sivas</option>
+        <option value="59">Tekirdağ</option>
+        <option value="60">Tokat</option>
+        <option value="61" selected>Trabzon</option>
+        <option value="62">Tunceli</option>
+        <option value="63">Şanlıurfa</option>
+        <option value="64">Uşak</option>
+        <option value="65">Van</option>
+        <option value="66">Yozgat</option>
+        <option value="67">Zonguldak</option>
+        <option value="68">Aksaray</option>
+        <option value="69">Bayburt</option>
+        <option value="70">Karaman</option>
+        <option value="71">Kırıkkale</option>
+        <option value="72">Batman</option>
+        <option value="73">Şırnak</option>
+        <option value="74">Bartın</option>
+        <option value="75">Ardahan</option>
+        <option value="76">Iğdır</option>
+        <option value="77">Yalova</option>
+        <option value="78">Karabük</option>
+        <option value="79">Kilis</option>
+        <option value="80">Osmaniye</option>
+        <option value="81">Düzce</option>
+        </select>
+        
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Acil Durum İletişim Bilgileri</legend>
+        <label for="acilad">Ad Soyad</label>
+        <input type="text" name="acilad" id="" required>
+        
+        <br><br>
+        <label for="aciltel">Telefon</label>
+        <input type="tel" name="aciltel" id="" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Diğer Evraklar</legend>
+        <label for="belgeler">Diğer Evraklar</label>
+        <input type="file" name="belgeler" id="" required accept=".pdf ">
+    </fieldset>
+
+    <br>
+
+     <label for="kvkk">Kvkk Metnini Onayladım</label>
+     <input type="checkbox" name="kvkk" id="" required> <button>Kaydet</button>
+
+
+   </form>
+</body>
+</html>
